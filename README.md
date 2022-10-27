@@ -2,14 +2,7 @@
 
 # SysMusic Music Server
 
-[![Last Release](https://img.shields.io/github/v/release/SysMusic/SysMusic?logo=github&label=latest&style=flat-square)](https://github.com/SysMusic/SysMusic/releases)
-[![Build](https://img.shields.io/github/workflow/status/SysMusic/SysMusic/Build?logo=github&style=flat-square)](https://nightly.link/SysMusic/SysMusic/workflows/pipeline/master)
-[![Downloads](https://img.shields.io/github/downloads/SysMusic/SysMusic/total?logo=github&style=flat-square)](https://github.com/SysMusic/SysMusic/releases/latest)
-[![Docker Pulls](https://img.shields.io/docker/pulls/deluan/SysMusic?logo=docker&label=pulls&style=flat-square)](https://hub.docker.com/r/deluan/SysMusic)
-[![Dev Chat](https://img.shields.io/discord/671335427726114836?logo=discord&label=discord&style=flat-square)](https://discord.gg/xh7j7yF)
-[![Subreddit](https://img.shields.io/reddit/subreddit-subscribers/SysMusic?logo=reddit&label=/r/SysMusic&style=flat-square)](https://www.reddit.com/r/SysMusic/)
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0-ff69b4.svg?style=flat-square)](CODE_OF_CONDUCT.md)
-
+Based on [Navidrome](https://navidrome.org)
 ## [Check out our Live Demo!](https://www.SysMusic.org/demo/)
 
 SysMusic is an open source web-based music collection server and streamer. It gives you freedom to listen to your 
