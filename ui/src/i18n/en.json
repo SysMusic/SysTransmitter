@@ -150,7 +150,7 @@
             "actions": {
                 "selectPlaylist": "Select a playlist:",
                 "addNewPlaylist": "Create \"%{name}\"",
-                "export": "ExportTo sta",
+                "export": "Export",
                 "makePublic": "Make Public",
                 "makePrivate": "Make Private"
             },

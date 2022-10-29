@@ -1,7 +1,7 @@
 const spotifyGreen = {
-  300: '#62ec83',
-  500: '#1db954',
-  900: '#008827',
+  300: '#b762ec',
+  500: '#951db9',
+  900: '#580085',
 }
 
 // For Album, Playlist
@@ -59,7 +59,7 @@ const musicListActions = {
 }
 
 export default {
-  themeName: 'Spotify-ish',
+  themeName: 'Default',
   typography: {
     fontFamily: "system-ui, 'Helvetica Neue', Helvetica, Arial",
     h6: {

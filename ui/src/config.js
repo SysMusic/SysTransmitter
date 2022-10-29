@@ -17,7 +17,7 @@ const defaultConfig = {
   devActivityPanel: true,
   devFastAccessCoverArt: false,
   enableStarRating: true,
-  defaultTheme: 'Spotify-ish',
+  defaultTheme: 'Default',
   defaultLanguage: '',
   enableUserEditing: true,
   devEnableShare: true,

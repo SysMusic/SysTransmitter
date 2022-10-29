@@ -3,12 +3,11 @@ import ShuffleIcon from '@material-ui/icons/Shuffle'
 import LibraryAddIcon from '@material-ui/icons/LibraryAdd'
 import VideoLibraryIcon from '@material-ui/icons/VideoLibrary'
 import RepeatIcon from '@material-ui/icons/Repeat'
-import AlbumIcon from '@material-ui/icons/Album'
+import AlbumIcon from '@material-ui/icons/AllInclusive'
 import FavoriteIcon from '@material-ui/icons/Favorite'
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
 import StarIcon from '@material-ui/icons/Star'
 import StarBorderIcon from '@material-ui/icons/StarBorder'
-import AlbumOutlinedIcon from '@material-ui/icons/AlbumOutlined'
 import LibraryAddOutlinedIcon from '@material-ui/icons/LibraryAddOutlined'
 import VideoLibraryOutlinedIcon from '@material-ui/icons/VideoLibraryOutlined'
 import config from '../config'
@@ -19,7 +18,7 @@ const albumLists = {
     icon: (
       <DynamicMenuIcon
         path={'album/all'}
-        icon={AlbumOutlinedIcon}
+        icon={AlbumIcon}
         activeIcon={AlbumIcon}
       />
     ),

@@ -5,7 +5,7 @@ import clsx from 'clsx'
 import { useTranslate, MenuItemLink, getResources } from 'react-admin'
 import { withRouter } from 'react-router-dom'
 import ViewListIcon from '@material-ui/icons/ViewList'
-import AlbumIcon from '@material-ui/icons/Album'
+import AlbumOutlinedIcon from '@material-ui/icons/AlbumOutlined'
 import SubMenu from './SubMenu'
 import inflection from 'inflection'
 import albumLists from '../album/albumLists'
@@ -56,7 +56,7 @@ const Menu = ({ dense = false }) => {
 
   // TODO State is not persisted in mobile when you close the sidebar menu. Move to redux?
   const [state, setState] = useState({
-    menuAlbumList: true,
+    menuAlbumList: false,
     menuPlaylists: true,
     menuSharedPlaylists: true,
   })
@@ -118,7 +118,7 @@ const Menu = ({ dense = false }) => {
         isOpen={state.menuAlbumList}
         sidebarIsOpen={open}
         name="menu.albumList"
-        icon={<AlbumIcon />}
+        icon={<AlbumOutlinedIcon />}
         dense={dense}
       >
         {Object.keys(albumLists).map((type) =>
