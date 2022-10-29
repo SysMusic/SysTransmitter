@@ -1,22 +1,18 @@
 import { useSelector } from 'react-redux'
 import useMediaQuery from '@material-ui/core/useMediaQuery'
 import themes from './index'
-import { AUTO_THEME_ID } from '../consts'
 import config from '../config'
 import { useEffect } from 'react'
 
 const useCurrentTheme = () => {
-  const prefersLightMode = useMediaQuery('(prefers-color-scheme: light)')
+  const prefersLightMode = useMediaQuery('(prefers-color-scheme: spotify)')
   const theme = useSelector((state) => {
-    if (state.theme === AUTO_THEME_ID) {
-      return prefersLightMode ? themes.LightTheme : themes.DarkTheme
-    }
     const themeName =
       Object.keys(themes).find((t) => t === state.theme) ||
       Object.keys(themes).find(
         (t) => themes[t].themeName === config.defaultTheme
       ) ||
-      'DarkTheme'
+      'SpotifyTheme' 
     return themes[themeName]
   })
 

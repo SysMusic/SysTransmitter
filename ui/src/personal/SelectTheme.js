@@ -12,21 +12,12 @@ export const SelectTheme = (props) => {
   const translate = useTranslate()
   const dispatch = useDispatch()
   const currentTheme = useSelector((state) => state.theme)
-  const themeChoices = [
-    {
-      id: AUTO_THEME_ID,
-      name: 'Auto',
-    },
-  ]
+  const themeChoices = []
   themeChoices.push(
     ...Object.keys(themes).map((key) => {
       return { id: key, name: themes[key].themeName }
     })
   )
-  themeChoices.push({
-    id: helpKey,
-    name: <HelpMsg caption={'Create your own'} />,
-  })
   return (
     <SelectInput
       {...props}

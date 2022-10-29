@@ -5,7 +5,6 @@ import mediaQuery from 'css-mediaquery'
 import { renderHook } from '@testing-library/react-hooks'
 import useCurrentTheme from './useCurrentTheme'
 import { themeReducer } from '../reducers/themeReducer'
-import { AUTO_THEME_ID } from '../consts'
 
 function createMatchMedia(theme) {
   return (query) => ({
@@ -19,16 +18,6 @@ describe('useCurrentTheme', () => {
   describe('with user preference theme as light', () => {
     beforeAll(() => {
       window.matchMedia = createMatchMedia('light')
-    })
-    it('sets theme as light in auto mode', () => {
-      const { result } = renderHook(() => useCurrentTheme(), {
-        wrapper: ({ children }) => (
-          <Provider store={createStore(themeReducer, { theme: AUTO_THEME_ID })}>
-            {children}
-          </Provider>
-        ),
-      })
-      expect(result.current.themeName).toMatch('Light')
     })
     it('sets theme as dark', () => {
       const { result } = renderHook(() => useCurrentTheme(), {
@@ -69,17 +58,6 @@ describe('useCurrentTheme', () => {
   describe('with user preference theme as dark', () => {
     beforeAll(() => {
       window.matchMedia = createMatchMedia('dark')
-    })
-    it('sets theme as dark in auto mode', () => {
-      const { result } = renderHook(() => useCurrentTheme(), {
-        wrapper: ({ children }) => (
-          <Provider store={createStore(themeReducer, { theme: AUTO_THEME_ID })}>
-            {children}
-          </Provider>
-        ),
-      })
-
-      expect(result.current.themeName).toMatch('Dark')
     })
     it('sets theme as dark', () => {
       const { result } = renderHook(() => useCurrentTheme(), {
