@@ -19,7 +19,7 @@ const Personal = () => {
 
   return (
     <Card className={classes.root}>
-      <Title title={'SysMusic - ' + translate('menu.personal.name')} />
+      <Title title={'SysMusic > ' + translate('menu.personal.name')} />
       <SimpleForm toolbar={null} variant={'outlined'}>
         <SelectTheme />
         <SelectLanguage />

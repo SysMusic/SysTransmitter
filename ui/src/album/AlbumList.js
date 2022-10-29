@@ -74,7 +74,7 @@ const AlbumListTitle = ({ albumListType }) => {
     let listTitle = translate(`resources.album.lists.${albumListType}`, {
       smart_count: 2,
     })
-    title = `${title} - ${listTitle}`
+    title = `${title} > ${listTitle}`
   }
   return <Title subTitle={title} args={{ smart_count: 2 }} />
 }
