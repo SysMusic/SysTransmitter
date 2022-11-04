@@ -3,7 +3,7 @@
 # SysMusic Music Server
 
 Based on [Navidrome](https://navidrome.org)
-## [Check out our Live Demo!](https://www.SysMusic.org/demo/)
+## [Check out our Live Demo!](https://m.syswhite.ml)
 
 SysMusic is an open source web-based music collection server and streamer. It gives you freedom to listen to your 
 music collection from any browser or mobile device. It's like your personal Spotify!
